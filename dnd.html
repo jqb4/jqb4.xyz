@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="dnd-favicon.ico">
+    <title>DnD Dices</title>
+    <link rel="stylesheet" href="dnd-style.css">
+</head>
+<body>
+<div class="dice-container">
+    <div class="dice d4" data-sides="4">d4</div>
+    <div class="dice d6" data-sides="6">d6</div>
+    <div class="dice d8" data-sides="8">d8</div>
+    <div class="dice d10" data-sides="10">d10</div>
+    <div class="dice d12" data-sides="12">d12</div>
+    <div class="dice d20" data-sides="20">d20</div>
+</div>
+<div class="result-container">
+</div>
+
+<div class="icon-container">
+    <img src="lightbulb.svg" alt="info-icon" class="info-icon">
+</div>
+
+<div class="popup-overlay" id="popup">
+    <div class="popup-content">
+        <span class="close-button" onclick="closePopup()">×</span>
+        <h2>DnD dices</h2>
+        <i>there are 6 dices:</i><br>
+        - <i>D4</i><br>
+        - <i>D6</i><br>
+        - <i>D8</i><br>
+        - <i>D10</i><br>
+        - <i>D12</i><br>
+        - <i>D14</i><br>
+        <br>
+        <i>for securing fair play there's a feature which prevents rolling a dice again for 5 seconds after the dice was rolled.</i><br>
+        <br>
+        <div class="buttons">
+            <button onclick="window.location.href='https://github.com/withthelog/dnd.withthelog.xyz';">github</button>
+            <button onclick="window.location.href='https://withthelog.xyz';">home</button>
+        </div>
+    </div>
+</div>
+
+<script src="dice.js"></script>
+
+<!-- JS for the menu pop-up & function to close the pop-up -->
+<script>
+    document.querySelector('.icon-container').addEventListener('click', function() {
+        document.getElementById('popup').style.display = 'flex';
+    });
+
+    function closePopup() {
+        document.getElementById('popup').style.display = 'none';
+    }
+
+</script>
+</body>
+</html>
