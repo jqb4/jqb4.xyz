@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<head>
+  <link rel="icon" href="music-favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Sora&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="music-style.css">
+  <title>my spotify jam</title>
+</head>
+<body>
+    <div class="container">
+      <a id="albumArtLink" href="#" target="_blank">
+        <img id="albumArt" alt="Album Art" style="display:none;" />
+      </a>
+        <div class="separator"></div>
+          <p id="activity">thinking...</p>
+        </div>
+
+    <div class="icon-container">
+        <img src="lightbulb.svg" alt="info-icon" class="info-icon">
+    </div>
+
+<div class="popup-overlay" id="popup">
+    <div class="popup-content">
+        <span class="close-button" onclick="closePopup()">×</span>
+      <h2>about this project</h2>
+      <i>this website simply shows what i'm listening to on Spotify through Lanyard API</i><br>
+      <i>when the website says "offline :(" i probably don't have Discord or Spotify turned on.</i>
+      <br>
+      <h2>functionality</h2>
+      <i>i'm using <a href="https://github.com/lokesh/color-thief">ColorThief</a> v. 2.6.0 library which takes two dominant colors from the song's cover art and applies it as a gradient</i><br>
+      <i>clicking on the picture will redict you on Spotify to the song i'm currently playing</i><br>
+         <div class="buttons">
+            <button onclick="window.location.href='https://github.com/withthelog/music.withthelog.xyz';">github</button>
+            <button onclick="window.location.href='https://withthelog.xyz';">home</button>
+          </div>
+    </div>
+</div>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.6.0/color-thief.umd.js"></script>
+  <script src="lanyard.js"></script>
+  <script>
+    document.querySelector('.icon-container').addEventListener('click', function() {
+        document.getElementById('popup').style.display = 'flex';
+    });
+
+    function closePopup() {
+        document.getElementById('popup').style.display = 'none';
+    }
+  </script>
+</body>
+</html>
