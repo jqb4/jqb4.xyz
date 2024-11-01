@@ -57,6 +57,11 @@ body {
 }
 
 .buttons button {
+    font-family: "Sora", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
     background-color: transparent;
     color: #ffffff;
     border: 2px solid #ffffff;
@@ -83,6 +88,20 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column; /* Stack elements vertically */
+    flex-direction: column;
+    text-align: center;
+}
+
+.h {
+    font-family: "Sora", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 48px;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     text-align: center;
 }
