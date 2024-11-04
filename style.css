@@ -4,6 +4,14 @@
     box-sizing: border-box;
 }
 
+a:link    {color: white}
+a:visited    {color: white}
+a:active    {color: white}
+
+a {
+    text-decoration: none;
+  }
+
 body {
     height: 100vh;
     display: flex;
