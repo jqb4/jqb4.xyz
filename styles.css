@@ -1,0 +1,73 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    position: relative;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    position: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Stack elements vertically */
+    text-align: center;
+    padding: 40px;
+    border-radius: 30px;
+    height: 100%; /* Make the container take full height */
+    max-width: 800px; /* Optional: Limit the width for better design */
+    width: 100%;
+    font-family: "Sora", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 8px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Space between links */
+    font-size: 17px; /* Adjust font size to match your style */
+    text-align: center;
+    color: #ffffff;
+    font-family: "Sora", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 8px;
+}
+
+.header {
+    font-family: "Sora", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 65px;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.ibeam {
+    width: 1px;
+    height: 70px;
+    background-color: red;
+    margin-top: 11px;
+    margin-left: 3px;
+    animation: blink 1s step-start infinite; 
+    position: absolute;
+}
+
+@keyframes blink {
+    50% { opacity: 0; }
+}
