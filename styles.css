@@ -1,6 +1,10 @@
 body {
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #000000;
+    position: relative;
     overflow: hidden;
 }
 
@@ -42,6 +46,9 @@ body {
     font-style: normal;
     font-size: 65px;
     color: #ffffff;
+    display: flex;
+    text-align: center;
+    display: inline-block;
 }
 
 .ibeam {
